@@ -14,6 +14,7 @@ class KaryawanController extends Controller
     public function index()
     {
         $karyawan = Karyawan::all();
+        $karyawan = Karyawan::orderBy('nama', 'asc')->get();
         return view('welcome', compact('karyawan'));
     }
 
