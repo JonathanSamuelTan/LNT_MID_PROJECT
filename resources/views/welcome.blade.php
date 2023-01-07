@@ -17,7 +17,7 @@
 
 <div class="row mx-3">
     @foreach ($karyawan as $k)
-        <div class="col-sm-3">
+        <div class="col-sm-3 my-3">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                 <h5 class="card-title"><b>{{$k->nama}}</b></h5>
