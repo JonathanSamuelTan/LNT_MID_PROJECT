@@ -20,4 +20,5 @@ Route::post("store",[KaryawanController::class, "store"])->name('store');
 Route::get("edit/{id}",[KaryawanController::class, "edit"])->name('edit');
 Route::patch("update/{id}",[KaryawanController::class, "update"])->name('update');
 Route::delete("delete/{id}",[KaryawanController::class, "destroy"])->name('delete');
+Route::get("karyawan/search",[KaryawanController::class, "search"])->name('search');
 

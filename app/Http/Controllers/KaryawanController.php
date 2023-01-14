@@ -101,4 +101,11 @@ class KaryawanController extends Controller
         Karyawan::destroy($id);
         return redirect()->route('home');
     }
+
+    public function search(Request $request)
+    {
+        $keyword = $request->search;
+        $karyawan = Karyawan::where('nama', 'like', "%" . $keyword . "%")->get();
+        return view('welcome', compact('karyawan'));
+    }
 }

@@ -13,6 +13,14 @@
         <img src="../assets/logo.png" alt="logo" width="75" height="75" class="d-inline-block align-text-middle">
         Meksiko Software House
       </a>
+      {{-- <form class="d-flex" role="search" action="search" method="GET">
+        <input class="form-control me-2" type="search" placeholder="Nama Karyawan" aria-label="Search">
+        <button class="btn btn-success" type="submit">Search</button>
+      </form> --}}
+      <form action="{{route('search')}}" method="GET" class="d-flex" role="search">
+          <input type="search" class="form-control me-2" name="search" placeholder="Search">
+          <button type="submit" class="btn btn-success">Search</button>
+    </form>
     </div>
   </nav>
 

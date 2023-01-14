@@ -19,7 +19,7 @@ class KaryawanFactory extends Factory
         return [
             'nama' => $this->faker->name,
             'umur' => $this->faker->numberBetween(20, 80),
-            'alamat' => $this->faker->address,
+            'alamat' => $this->faker->address(40),
             'telepon' => '085663001112'
         ];
     }
